@@ -2,7 +2,6 @@ import React from "react";
 import { Icon } from "react-icons-kit";
 import { trash } from "react-icons-kit/feather/trash";
 
-
 export const View = ({ Items, deleteItem }) => {
   function roundOff(x) {
     return Number.parseFloat(x).toFixed(2);

@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -6,7 +6,7 @@
   width: 100vw;
 }
 
-.header{
+.header {
   text-align: center;
   background-color: #8a2be2;
   color: yellow;
@@ -15,14 +15,15 @@
   margin: 0;
 }
 
-.itemWrapper{
+.itemWrapper {
   background-color: rgba(138, 43, 226, 0.7);
   text-align: center;
   margin: 0;
   padding: 15px;
+  margin-bottom: 20px;
 }
 
-.itemHeader{
+.itemHeader {
   display: inline-block;
   font-size: 2.5rem;
   text-align: center;
@@ -30,7 +31,7 @@
   margin: 0;
 }
 
-.navButton{
+.navButton {
   font-size: 1.5rem;
   border-radius: 10px;
   padding: 10px;
@@ -42,64 +43,79 @@
   text-decoration: none;
 }
 
-.add-item{
+.add-item {
   float: right;
 }
 
-.products{
+.products {
   float: left;
 }
 
-.products:hover{
+.products:hover {
   color: white;
 }
 
-.add-item:visited{
-  color: white;
-  text-decoration: none;
-}
-
-.products:visited{
+.add-item:visited {
   color: white;
   text-decoration: none;
 }
 
-.btn{
+.products:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.form{
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.7);
+  padding: 50px;
+}
+
+.btn {
   background-color: rgb(138, 43, 226);
   color: yellow;
   font-weight: bold;
 }
 
-.btn:visited{
+.btn:visited {
   color: yellow;
 }
 
-.btn:hover{
+.btn:hover {
   color: yellow;
 }
 
-.view-container{
-  margin: 20px 20px;
+.view-container {
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin-top: 20px;
   background-color: rgb(240, 236, 236);
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px 10px 0 0;
+  text-align: center;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.7);
 }
 
-.view-container .btn{
+.view-container .btn {
   background-color: red;
 }
 
-.delete-btn{
+.delete-btn {
   color: red;
   cursor: pointer;
 }
 
-th{
+th {
   color: violet;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
+td {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.emptyArray {
+  font-size: 1.5rem;
+  font-weight: 600;
+}

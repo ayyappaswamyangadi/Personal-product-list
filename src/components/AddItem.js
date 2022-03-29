@@ -12,43 +12,49 @@ export const AddItem = (props) => {
         <h1 className="itemHeader">Add item</h1>
       </div>
 
-      <div className="container">
+      <div className="container form">
         <form
           autoComplete="off"
           className="form-group row g-3"
           onSubmit={props.handleAddItemSubmit}
         >
           <div className="col-12">
-          <label>Title</label>
-          <input
-            type="text"
-            className="form-control"
-            required
-            onChange={(e) => props.setTitle(e.target.value)}
-            value={props.title}
-          ></input>
+            <b>
+              <label>Title</label>
+            </b>
+            <input
+              type="text"
+              className="form-control"
+              required
+              onChange={(e) => props.setTitle(e.target.value)}
+              value={props.title}
+            ></input>
           </div>
 
           <div className="col-12">
-          <label>Quantity</label>
-          <input
-            type="text"
-            className="form-control mb-3"
-            required
-            onChange={(e) => props.setQuantity(e.target.value)}
-            value={props.quantity}
-          ></input>
+            <b>
+              <label>Quantity</label>
+            </b>
+            <input
+              type="text"
+              className="form-control mb-3"
+              required
+              onChange={(e) => props.setQuantity(e.target.value)}
+              value={props.quantity}
+            ></input>
           </div>
 
-<div className="col-12">
-          <label>Price</label>
-          <input
-            type="number"
-            className="form-control mb-3"
-            required
-            onChange={(e) => props.setPrice(e.target.value)}
-            value={props.price}
-          ></input>
+          <div className="col-12">
+            <b>
+              <label>Price</label>
+            </b>
+            <input
+              type="number"
+              className="form-control mb-3"
+              required
+              onChange={(e) => props.setPrice(e.target.value)}
+              value={props.price}
+            ></input>
           </div>
 
           <div className="d-grid">
