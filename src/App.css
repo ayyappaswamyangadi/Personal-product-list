@@ -50,6 +50,10 @@
   float: left;
 }
 
+.products:hover{
+  color: white;
+}
+
 .add-item:visited{
   color: white;
   text-decoration: none;

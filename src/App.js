@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { AddItem } from "./components/AddItem";
 import ProductList from "./components/ProductList";
-import Header from './components/Header'
+import Header from "./components/Header";
 
 const getDatafromLS = () => {
   const data = localStorage.getItem("Items");
@@ -31,17 +31,15 @@ function App() {
       id: randomNumber,
       title,
       quantity,
-      price
+      price,
     };
     setItems([...Items, Item]);
     setId("");
     setTitle("");
     setQuantity("");
     setPrice("");
-    alert("Product added successfully")
-
+    alert("Product added to the list successfully");
   };
-
 
   // delete book from LS
   const deleteItem = (id) => {
@@ -56,11 +54,11 @@ function App() {
     localStorage.setItem("Items", JSON.stringify(Items));
   }, [Items]);
 
- 
-
   return (
-    <div className="wrapper
-    ">
+    <div
+      className="wrapper
+    "
+    >
       <Header />
       <Router>
         <Routes>
@@ -85,6 +83,34 @@ function App() {
 
           <Route
             path="/"
+            element={
+              <ProductList
+                title={title}
+                quantity={quantity}
+                price={price}
+                Items={Items}
+                deleteItem={deleteItem}
+                setItems={setItems}
+              />
+            }
+          />
+
+          <Route
+            path="/product-list"
+            element={
+              <ProductList
+                title={title}
+                quantity={quantity}
+                price={price}
+                Items={Items}
+                deleteItem={deleteItem}
+                setItems={setItems}
+              />
+            }
+          />
+
+          <Route
+            path="*"
             element={
               <ProductList
                 title={title}
